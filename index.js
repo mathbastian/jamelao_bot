@@ -15,13 +15,18 @@ client.on('ready', () => {
     });
 });
 
-const commandList = ['comer', 'idai', 'bater', "ofender", "observar", "chok", "peixe", "lol" ];
+const commandList = ['comer', 'idai', 'bater', "ofender", "observar", "chok", "peixe", "lol" ,"lavarasmaos"];
 
 const ofensasIndividuais = ["a sua mãe é tão grande que tem o próprio fuso horário",
 							"planta bananeira em chuva de piroca",
 							"transa de costas",
 							"chupa pinto",
 							"queima a rosca"];
+
+const lavarAsMaos =[	"Antes",
+		    	"Depois",
+			"Antes e depois",
+			"Nem antes, nem depois"];
 
 const ofensasColetivas = ["fez uma suruba com vossa mãe... ta em chok kk?"];
 
@@ -185,6 +190,11 @@ client.on('message', message => {
 		}
 
 		return message.channel.send(content);
+	}
+	else if (command === 'lavarasmaos'){
+	
+		return message.channel.send(lavarAsMaos[Math.floor(Math.random() * ofensasIndividuais.length)] 
+	
 	}
 
 	else{
