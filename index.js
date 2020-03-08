@@ -193,7 +193,7 @@ client.on('message', message => {
 	}
 	else if (command === 'lavarasmaos'){
 	
-		return message.channel.send(lavarAsMaos[Math.floor(Math.random() * ofensasIndividuais.length)] 
+		return message.channel.send(lavarAsMaos[Math.floor(Math.random() * ofensasIndividuais.length)] );
 	
 	}
 
